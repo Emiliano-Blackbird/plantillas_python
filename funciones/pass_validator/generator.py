@@ -2,7 +2,12 @@ import random
 import string
 
 
-def generar_password_segura(longitud, incluir_mayusculas=True, incluir_minusculas=True, incluir_numeros=True, incluir_caracteres_especiales=True):
+def generar_password_segura(
+        longitud,
+        incluir_mayusculas=True,
+        incluir_minusculas=True,
+        incluir_numeros=True,
+        incluir_caracteres_especiales=True):
     """
     Genera una contraseña segura basada en los parámetros especificados.
     """

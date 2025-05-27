@@ -10,7 +10,12 @@ dinero_total = 0
 for i in range(0, len(precio_productos)):
     dinero_por_producto = precio_productos[i] * unidades_producto[i]
     dinero_total = dinero_total + dinero_por_producto
-    print(f"El dinero facturado por el producto {i + 1} es {dinero_por_producto} euros")
+    print(
+        (
+            f"El dinero facturado por el producto {i + 1} es "
+            f"{dinero_por_producto} euros"
+        )
+    )
 
 
 print("El número total de unidades vendidas es", total_ventas)

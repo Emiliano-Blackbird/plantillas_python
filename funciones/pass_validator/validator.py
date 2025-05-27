@@ -22,4 +22,5 @@ def validar_password(password):
         else:
             tiene_caracter_especial = True
 
-    return (tiene_mayuscula and tiene_minuscula and tiene_numero and tiene_caracter_especial)
+    return (tiene_mayuscula and tiene_minuscula and tiene_numero
+            and tiene_caracter_especial)

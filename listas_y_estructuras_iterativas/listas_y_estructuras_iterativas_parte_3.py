@@ -9,7 +9,10 @@ alfabeto_mayusculas = alfabeto.upper()
 
 # o podemos desarrollarlo con listas
 '''
-alfabeto = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+alfabeto = [
+    "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
+    "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
+]
 alfabeto_mayusculas = []
 for letra in alfabeto:
     alfabeto_mayusculas.append(letra.upper())
@@ -78,8 +81,14 @@ for char in mensaje:
 # Si lo son:
 if mensaje_cifrado == mensaje_comparacion:
     # Imprimimos que ambos mensajes son la encriptacion ROT13 el uno del otro
-    print(f"Los mensajes {mensaje} y {mensaje_comparacion} son una encriptacion el uno del otro")
+    print(
+        f"Los mensajes {mensaje} y {mensaje_comparacion} "
+        "son una encriptacion el uno del otro"
+    )
 # Si no lo son
 else:
     # Imprimimos los mensajes no son encriptacion ROT13 el uno del otro
-    print(f"Los mensajes {mensaje} y {mensaje_comparacion} no son una encriptacion el uno del otro")
+    print(
+        f"Los mensajes {mensaje} y {mensaje_comparacion} "
+        "no son una encriptacion el uno del otro"
+    )

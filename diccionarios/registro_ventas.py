@@ -3,7 +3,13 @@ ventas_diarias = {}
 continuar = True
 
 while continuar:
-    opcion = input("1. Registrar venta\n2. Actualizar cantidad vendida\n3. Calcular total de ventas\n4. Salir\nElige una opción: ")
+    opcion = input(
+        "1. Registrar venta\n"
+        "2. Actualizar cantidad vendida\n"
+        "3. Calcular total de ventas\n"
+        "4. Salir\n"
+        "Elige una opción: "
+    )
 
     # Registrar ventas
     if opcion == "1":
@@ -23,13 +29,15 @@ while continuar:
     elif opcion == "2":
         # Ingresar producto
         producto = input("Ingrese el nombre del producto a actualizar: ")
-        # Comprobamos que el producto existe en nuestro registro
+        # Comprobamos que el producto existe
+        # en nuestro registro
         if producto in ventas_diarias:
             # Pedimos la cantidad vendida de ese producto
             nueva_cantidad = int(input("Ingrese la nueva cantidad vendida: "))
             # Actualizamos la cantidad total de unidades vendidas
             ventas_diarias[producto] = nueva_cantidad
-        # En el caso de que el producto no exista en la base de datos lo indicamos
+        # En el caso de que el producto no exista en la base de datos
+        # lo indicamos
         else:
             print("El producto no existe en las ventas diarias.")
 

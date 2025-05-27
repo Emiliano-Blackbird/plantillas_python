@@ -5,9 +5,16 @@ semana para identificar los días de mayor venta.
 '''
 
 # lista con las ventas del mes
-ventas = [120, 80, 140, 200, 75, 100, 180, 220, 160, 110, 90, 120, 170, 190, 250, 300, 95, 110, 140, 180, 200, 160, 120, 80, 170, 150, 210, 190, 230, 250]
+ventas = [
+    120, 80, 140, 200, 75, 100, 180, 220, 160, 110,
+    90, 120, 170, 190, 250, 300, 95, 110, 140, 180,
+    200, 160, 120, 80, 170, 150, 210, 190, 230, 250
+]
 # lista con los dias de la semana
-dias_semana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+dias_semana = [
+    "Lunes", "Martes", "Miércoles", "Jueves",
+    "Viernes", "Sábado", "Domingo"
+]
 # lista donde guardar las ventas por dia
 ventas_totales = [0, 0, 0, 0, 0, 0, 0]
 

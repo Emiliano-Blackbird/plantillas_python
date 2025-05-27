@@ -52,7 +52,10 @@ while continuar:
         print("Porcentaje de votos por candidato")
         for candidato, votos in resultados.items():
             porcentaje = (votos/total_votos) * 100
-            print(f"Candidato: {candidato}, Porcentaje de votos {porcentaje:.2f}%")
+            print(
+                f"Candidato: {candidato}, Porcentaje de votos "
+                f"{porcentaje:.2f}%"
+            )
 
     # Cerrar script
     elif opcion == "5":

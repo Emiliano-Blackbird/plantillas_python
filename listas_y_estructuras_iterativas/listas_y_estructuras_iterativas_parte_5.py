@@ -35,7 +35,7 @@ while i < len(nombres_usuario):
     i = i + 1
 
 # si el usuario y contaseña son validos damos la bienvenida
-if credenciales == True:
+if credenciales:
     print("Acceso permitido")
 
 # si no son validos denegamos acceso
