@@ -5,6 +5,7 @@ Implementa métodos para agregar elementos a la pila, quitar
 elementos y mostrar el contenido actual.
 """
 
+
 class Pila:
     # Constructor de la clase, inicializa una pila vacía
     def __init__(self):
@@ -36,4 +37,4 @@ pila.agregar(5)  # Agregar el número 5 a la pila
 pila.agregar(10)  # Agregar el número 10 a la pila
 pila.mostrar_contenido()  # Mostrar el contenido actual de la pila
 pila.quitar()  # Quitar el último elemento de la pila
-pila.mostrar_contenido()  # Mostrar el contenido actual de la pila después de quitar
+pila.mostrar_contenido()  # Mostrar el contenido actual de la pila

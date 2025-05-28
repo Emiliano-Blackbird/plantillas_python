@@ -6,12 +6,14 @@ precio y cantidad en stock. Luego, crea una clase
 y métodos para agregar productos, mostrar el inventario y realizar una compra.
 """
 
+
 class Producto:
     # Constructor de la clase Producto, inicializa nombre, precio y stock
     def __init__(self, nombre, precio, stock):
         self.nombre = nombre
         self.precio = precio
         self.stock = stock
+
 
 class Tienda:
     # Constructor de la clase Tienda, inicializa la lista de productos vacía
@@ -25,7 +27,10 @@ class Tienda:
     # Método para mostrar el inventario de productos en la tienda
     def mostrar_inventario(self):
         for producto in self.productos:
-            print(f"{producto.nombre} - Precio: {producto.precio} EU  - Stock: {producto.stock}")
+            print(
+                f"{producto.nombre} - Precio: {producto.precio} EU  - "
+                f"Stock: {producto.stock}"
+            )
 
     # Método para realizar una compra de un producto
     def comprar_producto(self, nombre, cantidad):
@@ -33,13 +38,17 @@ class Tienda:
             if producto.nombre == nombre:
                 if producto.stock >= cantidad:
                     producto.stock -= cantidad
-                    print(f"Compra exitosa. Total: {producto.precio * cantidad} EU")
+                    print(
+                        f"Compra exitosa. Total: "
+                        f"{producto.precio * cantidad} EU"
+                    )
                 else:
                     print("No hay suficiente stock.")
 
                 return
 
         print("Producto no encontrado")
+
 
 # Ejemplo de Uso
 tienda = Tienda()  # Crear una instancia de Tienda
@@ -51,4 +60,5 @@ tienda.agregar_producto(producto2)  # Agregar producto2 a la tienda
 tienda.mostrar_inventario()  # Mostrar el inventario de productos en la tienda
 
 tienda.comprar_producto("Camiseta", 55)  # Intentar comprar 55 camisetas
-tienda.mostrar_inventario()  # Mostrar el inventario después de intentar la compra
+# Mostrar el inventario después de intentar la compra
+tienda.mostrar_inventario()
