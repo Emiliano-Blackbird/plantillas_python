@@ -19,7 +19,7 @@ usuario_registrado = {
 
 def verificar_inicio_sesion(funcion):
     def wrapper(nombre_usuario, password):
-        if nombre_usuario in usuario_registrado and usuario_registrado[nombre_usuario] ["password"] == password:
+        if nombre_usuario in usuario_registrado and usuario_registrado[nombre_usuario]["password"] == password:
             print(f"Bienvenido {nombre_usuario}!")
             usuario_info = usuario_registrado[nombre_usuario]
             return funcion(usuario_info)
